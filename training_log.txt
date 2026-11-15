@@ -1,0 +1,111 @@
+Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount("/content/drive", force_remount=True).
+
+Map (num_proc=2):   0%|          | 0/500000 [00:00<?, ? examples/s]
+Map (num_proc=2):   0%|          | 0/21990 [00:00<?, ? examples/s]
+train tokens 111,798,425  val tokens 4,743,928
+Tesla T4 torch.float16 30.0M params
+unigram baseline: val loss 5.965  ppl 390
+
+baseline:   0%|          | 0/9765 [00:00<?, ?it/s]
+/usr/local/lib/python3.13/dist-packages/torch/optim/lr_scheduler.py:1194: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  scheduler.step()
+
+{'tokens': 1998848, 'lr': 9.999999999999999e-05, 'train': 9.501147918701172, 'val': 9.506426944732667}
+{'tokens': 3997696, 'lr': 0.00010272480648000474, 'train': 8.434457054138184, 'val': 8.447481212615967}
+{'tokens': 5996544, 'lr': 0.00011082498021648484, 'train': 7.424614744186401, 'val': 7.4358025169372555}
+{'tokens': 7995392, 'lr': 0.00012407980715057639, 'train': 6.496068391799927, 'val': 6.490327205657959}
+{'tokens': 9994240, 'lr': 0.00014212811889906604, 'train': 5.7539928436279295, 'val': 5.741273269653321}
+{'tokens': 11993088, 'lr': 0.00016447813389389968, 'train': 5.158796529769898, 'val': 5.175563726425171}
+{'tokens': 13991936, 'lr': 0.0001905208574782155, 'train': 4.774932479858398, 'val': 4.764444875717163}
+{'tokens': 15990784, 'lr': 0.00021954667583221808, 'train': 4.426765184402466, 'val': 4.415870189666748}
+{'tokens': 17989632, 'lr': 0.0002507646915765239, 'train': 4.168036813735962, 'val': 4.165859003067016}
+{'tokens': 19988480, 'lr': 0.0002833242741952035, 'train': 3.9467104196548464, 'val': 3.9568811225891114}
+{'tokens': 21987328, 'lr': 0.0003163382380711999, 'train': 3.7867143106460572, 'val': 3.7822896385192872}
+{'tokens': 23986176, 'lr': 0.0003489070165775134, 'train': 3.599664249420166, 'val': 3.6126199054718016}
+{'tokens': 25985024, 'lr': 0.00038014317352694487, 'train': 3.4824481534957887, 'val': 3.502077565193176}
+{'tokens': 27983872, 'lr': 0.0004091955840908331, 'train': 3.3889664936065675, 'val': 3.3765018081665037}
+{'tokens': 29982720, 'lr': 0.00043527262630353616, 'train': 3.257156491279602, 'val': 3.2792648601531984}
+{'tokens': 31981568, 'lr': 0.0004576637512290468, 'train': 3.174345541000366, 'val': 3.1720679998397827}
+{'tokens': 33980416, 'lr': 0.0004757588440444509, 'train': 3.107473111152649, 'val': 3.0883824539184572}
+{'tokens': 35979264, 'lr': 0.0004890648484881495, 'train': 2.989297399520874, 'val': 3.007097601890564}
+{'tokens': 37978112, 'lr': 0.0004972192016888322, 'train': 2.9418598556518556, 'val': 2.9755221128463747}
+{'tokens': 39976960, 'lr': 0.0004999997133020833, 'train': 2.8818917751312254, 'val': 2.8729586029052734}
+baseline: 305 optimizer updates, full-val loss 2.882, ppl 17.84
+
+fixed:   0%|          | 0/9765 [00:00<?, ?it/s]
+{'tokens': 1998848, 'lr': 0.0006, 'train': 4.036419820785523, 'val': 4.035903654098511}
+{'tokens': 3997696, 'lr': 0.00059632071989596, 'train': 3.2532832431793213, 'val': 3.26287682056427}
+{'tokens': 5996544, 'lr': 0.0005853831544140918, 'train': 2.936901969909668, 'val': 2.948898401260376}
+{'tokens': 7995392, 'lr': 0.0005674853951622785, 'train': 2.7636498069763182, 'val': 2.773018593788147}
+{'tokens': 9994240, 'lr': 0.0005431152263592023, 'train': 2.64017276763916, 'val': 2.6321413803100584}
+{'tokens': 11993088, 'lr': 0.0005129368307990082, 'train': 2.4960614538192747, 'val': 2.5246564245223997}
+{'tokens': 13991936, 'lr': 0.0004777726882621098, 'train': 2.4453238010406495, 'val': 2.438872275352478}
+{'tokens': 15990784, 'lr': 0.00043858115971155535, 'train': 2.3686775493621828, 'val': 2.370024151802063}
+{'tokens': 17989632, 'lr': 0.0003964303681935911, 'train': 2.291862530708313, 'val': 2.3117848777770997}
+{'tokens': 19988480, 'lr': 0.0003524690882904515, 'train': 2.25709011554718, 'val': 2.2642280983924867}
+{'tokens': 21987328, 'lr': 0.00030789543750210467, 'train': 2.248603367805481, 'val': 2.257064390182495}
+{'tokens': 23986176, 'lr': 0.0002639242228397373, 'train': 2.177023673057556, 'val': 2.2014087581634523}
+{'tokens': 25985024, 'lr': 0.00022175383256451507, 'train': 2.1634724617004393, 'val': 2.186350653171539}
+{'tokens': 27983872, 'lr': 0.00018253357540176575, 'train': 2.1588575553894045, 'val': 2.1610781240463255}
+{'tokens': 29982720, 'lr': 0.00014733235736522597, 'train': 2.1151794672012327, 'val': 2.129248414039612}
+{'tokens': 31981568, 'lr': 0.00011710954987089321, 'train': 2.10744975566864, 'val': 2.1142171812057495}
+{'tokens': 33980416, 'lr': 9.268884309878273e-05, 'train': 2.1123683261871338, 'val': 2.092536108493805}
+{'tokens': 35979264, 'lr': 7.473579720114128e-05, 'train': 2.07245596408844, 'val': 2.08856974363327}
+{'tokens': 37978112, 'lr': 6.373970317484406e-05, 'train': 2.0660674452781675, 'val': 2.105375144481659}
+{'tokens': 39976960, 'lr': 6.000024776043234e-05, 'train': 2.066319994926453, 'val': 2.0673971581459045}
+fixed: 2441 optimizer updates, full-val loss 2.077, ppl 7.98
+
+<Figure size 1200x400 with 2 Axes>
+run         updates  val loss      ppl
+unigram           -     5.965    389.6
+baseline        305     2.882    17.84
+fixed          2441     2.077     7.98
+--- baseline | Once upon a time there was a pumpkin.
+Once upon a time there was a pumpkin. The bunny was very sad and wished the squirrel would play with his friends. One day, he spotted something special and found a little girl that was shining. She couldn't find it, he was very excited.
+
+She tried to keep it up, but the little one was too big and it could not fly away. Suddenly, something bad happened. The little girl got sad and asked her mum for help. The little girl thought about the little girl was okay. 
+
+"I'm sorry!" said the girl.
+
+The bear kept his head and waited. She opened the door
+
+--- baseline | A little girl went to the woods
+A little girl went to the woods. She saw a big, red dog, and a bug. The little girl was scared, but she felt mean. She wanted to buy another ball. She tried to catch it, but it was too fast.
+
+"I'm sorry, Lily. I couldn't wait to get it from it. The dog said, "Ben, I was hurt a mouse. I don't want to play anymore."
+
+Tom and Lily ran to the man and ran to the park. They looked at each other and saw the ducks and saw the cat and the cat. They said, "Thank
+
+--- baseline | Tom was sad because
+Tom was sad because he liked to play with his toys. One day, he spotted a little girl named Lily went to the park with her mom. She had a big, excited boy named Lily.
+
+Her mom told her that her that it was not fun to do something that he wanted to help. Lily went inside and saw a man standing in a small house. Lily said, "It's a big, Lily. You can take care of a picnic for you to us!" Lilymy agreed to get a long time.
+
+After a while, Max's mommy came to have a great adventure.
+
+--- fixed | Once upon a time there was a pumpkin.
+Once upon a time there was a pumpkin. The pumpkin was very special and loved to eat it. Every day the pumpkin would go to the restaurant and eat yummy food. One day, the pumpkin decided to prepare for a picnic.
+
+First the pumpkin set to eat a picnic. The pumpkin wanted to eat all the yummy food, but it was too heavy for the pumpkin. The pumpkin ate a few more fruit and then went back to its home. The pumpkin was happy and wanted to eat all the delicious treats.
+
+The pumpkin went home with a smile on its face. It was happy and full. From that day on
+
+--- fixed | A little girl went to the woods
+A little girl went to the woods. She saw trees, trees and trees. She was very curious about the flowers and birds. She wanted to see how they looked. She peered out from behind her and saw a big red balloon. It had many colors of a green color. It looked so pretty.
+
+She wanted to catch the balloon. She climbed up to the tree and climbed up. But the balloon did not come out. It flew away from the bushes.
+
+She looked for herself. But then she saw a big, scary dog. It growled at her and growled. It growled and buzz
+
+--- fixed | Tom was sad because
+Tom was sad because he liked to play with his red ball. He looked for his red ball from his friend, Sam. They looked under the sofa, but they could not find it. They could not find it. They felt sad and angry.
+
+"Sam, Sam, come here!" Tom said. "I want your red ball! I want it!"
+
+Sam heard them and ran to the couch. He saw the red ball and the green ball. He thought they were fun.
+
+"No, Tom, I don't want your red ball. It is mine!" Sam said. "
+
+saved to /content/drive/MyDrive/slm_eval
+
+<Figure size 640x480 with 0 Axes>
